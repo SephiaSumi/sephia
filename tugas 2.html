@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TUGAS PEMOGRAMAN WEB</title>
+    <style>
+        body {
+            background-color: royalblue;
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            background-color: navy; 
+            width: 50%; 
+            color: white; 
+        }
+        td {
+            background-color: navy; 
+            padding: 10px;
+            color: white; 
+            text-align: justify;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border: 5px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #reaction {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        button {
+            background-color: navy; 
+            color: white; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue; 
+        }
+    </style>
+    <script>
+        function showReaction() {
+            document.getElementById('reaction').style.display = 'block';
+            alert('Biodata berhasil disimpan!');
+        }
+    </script>
+</head>
+<body>
+    <img src="me.jpg" width="200" alt="Your Image">
+    <h1>BIODATA</h1>
+    <h6>
+        <table border="1" cellspacing="0" cellpadding="9">
+            <tr>
+                <td> NAMA </td>
+                <td> : </td>
+                <td> SEPHIA SUMI JAYATININGRUM </td>
+            </tr>
+            <tr>
+                <td> NIM </td>
+                <td> : </td>
+                <td> D212111017 </td>
+            </tr>
+            <tr>
+                <td> ALAMAT </td>
+                <td> : </td>
+                <td> SAYURAN NO 30 KAB BANDUNG </td>
+            </tr>
+            <tr>
+                <td> HOBI </td>
+                <td> : </td>
+                <td> MEMBACA </td>
+            </tr>
+        </table>
+    </h6>
+    
+    <button onclick="showReaction()">Simpan</button>
+    
+    <div id="reaction">
+        <p>Data tersimpan dengan sukses!</p>
+    </div>
+</body>
+</html>
